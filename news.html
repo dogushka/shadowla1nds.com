@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>Новости</title>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo" data-scroll="#intro">Новости</div>
+
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Меню</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div class="page">
+
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h2 class="intro__suptitle">ShadowLands News</h2>
+
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="container">
+                <div class="slider__inner">
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.intro -->
+
+    <section class="section" id="works">
+        <div class="container">
+
+            <div class="section__header">
+                <h2 class="section__title">Новости</h2>
+            </div>
+
+            <div class="blog-card">
+              <input type="radio" name="select" id="tap-1" checked>
+              <input type="radio" name="select" id="tap-2">
+              <input type="radio" name="select" id="tap-3">
+              <input type="checkbox" id="imgTap">
+              <div class="sliders">
+                <label for="tap-1" class="tap tap-1"></label>
+                <label for="tap-2" class="tap tap-2"></label>
+                <label for="tap-3" class="tap tap-3"></label>
+              </div>
+              <div class="inner-part">
+                <label for="imgTap" class="img">
+                  <img class="img-1" src="assets/images/blog/obnova.jpg">
+                </label>
+                <div class="content content-1">
+                  <span>22 Февраль 2021</span>
+                  <div class="title">
+        Обновление V1.5</div>
+        <div class="text">
+        • Обновили вкладку "Новости" - перекидует на новую страницу + новое оформ...</div>
+        <a href="#v5" class="iw-modal-btn">Подробнее...</a>
+                </div>
+      </div>
+      <div class="inner-part">
+              <label for="imgTap" class="img">
+                <img class="img-2" src="assets/images/blog/1.jpg">
+              </label>
+              <div class="content content-2">
+                <span>21 Февраля 2021</span>
+                <div class="title">
+      Радио "Sl Fm"</div>
+      <div class="text">
+      Привет, мы создали Радио "SL Fm"...</div>
+      <a href="#rad" class="iw-modal-btn">Подробнее...</a>
+              </div>
+      </div>
+      </div>
+        <div class="inner-part">
+                <label for="imgTap" class="img">
+                  <img class="img-3" src="assets/images/blog/soon.jpg">
+                </label>
+                <div class="content content-3">
+                  <span>...</span>
+                  <div class="title">
+        Ожидание</div>
+        <div class="text">
+        .......</div>
+        <a href="#soon" class="iw-modal-btn">Подробнее...</a>
+                </div>
+        </div>
+        </div>
+        
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/confetti.js-master/confetti.js"></script>
+<script>
+  const startit = () => {
+    setTimeout(function () {
+      console.log("start");
+      confetti.start();
+    }, 1000);
+  };
+
+  const stopit = () => {
+    setTimeout(function () {
+      console.log("stop");
+      confetti.stop();
+    }, 6000);
+  };
+
+  startit();
+  stopit();
+</script>
+
+<!---Разметка для модального окна---->
+<div id="v5" class="iw-modal">
+    <div class="iw-modal-wrapper">
+    <div class="iw-CSS-modal-inner">
+    <div class="iw-modal-header">
+    <h3 class="iw-modal-title">Обновление V1.5</h3>
+    <a href="#close" title="Закрыть" class="iw-close">×</a>
+    </div>
+    <div class="iw-modal-text">
+        <p class="blog-post_text"><b>• Добавлена категория "Города"</b></p>
+        <p class="blog-post_text"><b>• Исправлены благи</b></p>
+        <p class="blog-post_text"><b>• Купили печенек к чаю ʕ ᵔᴥᵔ ʔ</b></p>
+        <p class="blog-post_text"><b>• Добавлена категория "Главная" - Быстрое перемещение на главную страницу.</b></p>
+        <p class="blog-post_text"><b>• Обновили вкладку "Новости" - перекидует на новую страницу + новое оформление.</b></p>
+        <p class="blog-post_text"><b>• Добавили конфети при входе на сайт.</b></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!---end.Разметка для модального окна---->
+
+    <!---Разметка для модального окна---->
+<div id="rad" class="iw-modal">
+    <div class="iw-modal-wrapper">
+    <div class="iw-CSS-modal-inner">
+    <div class="iw-modal-header">
+    <h3 class="iw-modal-title">Радио "SL Fm"</h3>
+    <a href="#close" title="Закрыть" class="iw-close">×</a>
+    </div>
+    <div class="iw-modal-text">
+        <p class="blog-post_text"><b>• dogushka и Gumball_great создали Радио "Sl Fm"! Там уже прошли первые подкасты<a href="https://youtu.be/f-nCiSmnIws">(клик)</a></b></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!---end.Разметка для модального окна---->
+
+    <!---Разметка для модального окна---->
+<div id="soon" class="iw-modal">
+    <div class="iw-modal-wrapper">
+    <div class="iw-CSS-modal-inner">
+    <div class="iw-modal-header">
+    <h3 class="iw-modal-title">Чшшшшшшшш</h3>
+    <a href="#close" title="Закрыть" class="iw-close">×</a>
+    </div>
+    <div class="iw-modal-text">
+        <p class="blog-post_text"><b>• Ожидай...</b></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!---end.Разметка для модального окна---->
+
+
+
+</body>
+</html>
